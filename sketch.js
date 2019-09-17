@@ -23,7 +23,7 @@ function setup() {
       fill(255, 0, 255, 50); 
       stroke(200, 100 ,200)
       strokeWeight(2);
-      ellipse(x*6, y*6, x + 15, y + 5);
+      ellipse(x*6, y*6, x + 15, y + 175);
      
       fill(11, 250, 41, 30) 
       stroke(100, 100, 100, 40)
