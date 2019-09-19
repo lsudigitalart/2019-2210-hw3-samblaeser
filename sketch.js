@@ -36,7 +36,7 @@ var y = 0
       fill(255, 0, 255, 50); 
       stroke(200, 100 ,200)
       strokeWeight(2);
-      ellipse(x*6, y*6, x + 15, y + 175);
+      ellipse(x*6, y*6, x + 15, y + random(175));
     }
     } 
 
@@ -72,44 +72,12 @@ var y = 0
     }
 
 
-fill(random(255),random(255),random(255));
-stroke(random(255),random(255),random(255));
-strokeWeight(2);
-beginShape();
-vertex(5, 20);
-vertex(15, 10);
-vertex(35, 20);
-vertex(55, 10);
-vertex(65, 20);
-vertex(35, 80);
-endShape(CLOSE);
-
-
-
-
 }
 
 
 var yS = 700
 
 function draw() {
-
-
-fill(random(255),random(255),random(255), 85);
-strokeWeight(3);
-stroke(250, 250, 250, 40);
-circle(random(width*8), random(height/8), random(width/20));
-   
-
- stroke(random(255),random(255),random(255));
- strokeWeight(6);
- point(910, yS);
-
-
- yS = yS - 20;
-
- 
-
 
 fill(random(255),random(255),random(255));
 stroke(random(255),random(255),random(255));
@@ -123,6 +91,31 @@ vertex(880, 760);
 vertex(910, 700);
 endShape(CLOSE);
 
+
+fill(random(255),random(255),random(255));
+stroke(random(255),random(255),random(255));
+strokeWeight(2);
+beginShape();
+vertex(5, 50);
+vertex(15, 40);
+vertex(35, 50);
+vertex(55, 40);
+vertex(65, 50);
+vertex(35, random(110));
+endShape(CLOSE);
+
+fill(random(255),random(255),random(255), 85);
+strokeWeight(3);
+stroke(250, 250, 250, 40);
+circle(random(width*8), random(height/8), random(width/20));
+   
+
+ stroke(random(255),random(255),random(255));
+ strokeWeight(random(13));
+ point(910, yS);
+
+
+ yS = yS - 20;
 
 }
 
